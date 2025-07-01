@@ -14,6 +14,7 @@ e il progetto si conforma al [Versionamento semantico](https://semver.org/spec/v
 
 ### Modificato
 
+- aggiornate versioni plugin maven
 - l'ambiente di riferimento è ora test comuni
 
 ### Rimosso
