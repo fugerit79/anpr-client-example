@@ -8,12 +8,12 @@
 ## Impostare le credenziali
 
 Per rendere il client utilizzabile, è importante impostare, al primo utilizzo, i certificati con le credenziali di test.
-Per ottenere delle credenziali di test, si prega di compilare il modulo all'indirizzo https://anpr-test.bobuild.com/request.
+Per ottenere delle credenziali di test, è necessario richiederle al comune per conto del quale è in corso l'integrazione software.
 
 Per personalizzare il certificato bisogna:
 
-- Creare il file `src/main/resources/config/FREE_Keystore.properties` partendo dall'esempio `src/main/resources/config/Example_FREE_Keystore.properties` inserendo i riferimenti al proprio ceritficato, al codice della postazione e al PIN del certificato.
-- Aggiungere il certificato ottenuto nella cartella `keystore/FREE`
+- Creare il file `src/main/resources/config/TEST_Keystore.properties` partendo dall'esempio `src/main/resources/config/Example_TEST_Keystore.properties` inserendo i riferimenti al proprio ceritficato, al codice della postazione e al PIN del certificato.
+- Aggiungere il certificato ottenuto nella cartella `keystore/TEST`
 
 ## Installazione
 
@@ -46,7 +46,7 @@ docker run -it --rm --name anpr-client-running-app anpr-client-app
 
 Una volta ricevute le credenziali, si potrà accedere all'applicazione web di test per visualizzare e svolgere operazioni con i dati caricati.
 
-Per fare ciò è necessario importare il certificato ricevuto (sbloccandolo con il rispettivo PIN) nel proprio sistema operativo o nel proprio browser. Dopodiché sarà possibile accedere a https://dpfree.anpr.interno.it/combas con nome utente e password ricevute via mail.
+Per fare ciò è necessario importare il certificato ricevuto (sbloccandolo con il rispettivo PIN) nel proprio sistema operativo o nel proprio browser. Dopodiché sarà possibile accedere a https://dptest.anpr.interno.it/combas con nome utente e password ricevute via mail.
 
 # Link utili
 * [Pagina di ANPR su Developers Italia](https://developers.italia.it/it/anpr)
