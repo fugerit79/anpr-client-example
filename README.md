@@ -1,5 +1,6 @@
 [![Partecipa sul canale #anpr](https://img.shields.io/badge/Slack%20channel-%23anpr-blue.svg)](https://developersitalia.slack.com/messages/C7A8NS7RQ)
 [![Ricevi un invito a Slack](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
+[![Keep a Changelog v1.1.0 badge](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.1.0-%23E05735)](CHANGELOG.md)
 
 # Client Java di esempio per il test di connessione ad ANPR
 
