@@ -9,6 +9,7 @@ e il progetto si conforma al [Versionamento semantico](https://semver.org/spec/v
 
 ### Aggiunto
 
+- supporto operazione P001
 - CHANGELOG.md (questo file)
 - trust con certificato wstest.anpr.interno.it aggiornato
 

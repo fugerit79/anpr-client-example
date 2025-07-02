@@ -287,6 +287,15 @@
 									</bindingFiles>
 								</wsdlOption>
 								<wsdlOption>
+									<wsdl>${basedir}/src/main/resources/wsdl/P000ServiziCittadino.wsdl</wsdl>
+									<serviceName>AnprServiceP000</serviceName>
+									<wsdlLocation>classpath:wsdl/P000ServiziCittadino.wsdl</wsdlLocation>
+									<bindingFiles>
+										<bindingFile>${basedir}/src/main/resources/binding_P000_xsd.xml</bindingFile>
+										<bindingFile>${basedir}/src/main/resources/binding_P000.xml</bindingFile>
+									</bindingFiles>
+								</wsdlOption>
+								<wsdlOption>
 									<wsdl>${basedir}/src/main/resources/wsdl/S001subentro.wsdl</wsdl>
 									<serviceName>AnprServiceS001</serviceName>
 									<wsdlLocation>classpath:wsdl/S001subentro.wsdl</wsdlLocation>

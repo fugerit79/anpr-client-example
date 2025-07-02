@@ -44,6 +44,8 @@ public class WSTypeHandler {
 	public static final String WSA002 = "WSA002";
 	public static final String WSA006 = "WSA006";
 
+	public static final String WSP001 = "WSP001";
+
 	public static final String WSS001 = "WSS001";
 
 	public static final String WSCIE2 = "WSCIE2";
@@ -59,10 +61,11 @@ public class WSTypeHandler {
 	public static final String URI_WSA000 = "/ANPRA000ServiziAire/AnprServiceA000";
 	public static final String URI_WSS001 = "/ANPRS001ServizioSubentro/AnprServiceS001";
 	public static final String URI_WSCIE0 = "/ANPRCIE/AnprServiziCIE";
+	public static final String URI_WSP000 = "/anpr-wsP000/AnprServiceP000";
 
 	private List<String> WSType = new ArrayList<String>(Arrays.asList(TESTCONN, WS1001, WS1002, WS1010, WS1013, WS1014,
 			WS2001, WS2003, WS2009, WS2011, WS3001, WS3002, WS3003, WS3005, WS3007, WS4001, WS4002, WS4003, WS5001,
-			WS5005, WS5007, WS5008, WS5009, WS5012, WS6001, WS7001, WSA001, WSA002, WSA006, WSS001, WSCIE2));
+			WS5005, WS5007, WS5008, WS5009, WS5012, WS6001, WS7001, WSA001, WSA002, WSA006, WSS001, WSCIE2, WSP001));
 	private String WSFamily;
 
 	public String getWSFamily() {
@@ -140,6 +143,8 @@ public class WSTypeHandler {
 			return URI_WSS001;
 		case WSCIE2:
 			return URI_WSCIE0;
+		case WSP001:
+			return URI_WSP000;
 		default:
 			return "";
 		}

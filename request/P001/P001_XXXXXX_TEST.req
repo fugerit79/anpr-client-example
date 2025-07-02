@@ -1,0 +1,18 @@
+<ns2:RichiestaP001 xmlns:ns2="http://sogei.it/ANPR/P000sc">
+  <testataRichiesta>
+    <idOperazioneComune>0</idOperazioneComune>
+    <codMittente>999999</codMittente>
+    <codDestinatario>ANPR05</codDestinatario>
+    <operazioneRichiesta>P001</operazioneRichiesta>
+    <dataOraRichiesta>2022-07-14T16:43:51.061+02:00</dataOraRichiesta>
+    <tipoOperazione>C</tipoOperazione>
+    <tipoInvio>TEST</tipoInvio>
+    <dataDecorrenza>2022-07-14+02:00</dataDecorrenza>
+  </testataRichiesta>
+  <criteriRicerca>
+    <dataIniziale>2024-09-01</dataIniziale>
+    <dataFinale>2024-09-11</dataFinale>
+    <idTipologia>2</idTipologia>
+    <idStatoRichiesta/>
+  </criteriRicerca>
+</ns2:RichiestaP001>

@@ -2,35 +2,7 @@ package it.interno.anpr.activator;
 
 import it.interno.anpr.config.ParamHandler;
 import it.interno.anpr.config.WSTypeHandler;
-import it.interno.anpr.security.message.Op1001Handler;
-import it.interno.anpr.security.message.Op1002Handler;
-import it.interno.anpr.security.message.Op1010Handler;
-import it.interno.anpr.security.message.Op1013Handler;
-import it.interno.anpr.security.message.Op1014Handler;
-import it.interno.anpr.security.message.Op2001Handler;
-import it.interno.anpr.security.message.Op2003Handler;
-import it.interno.anpr.security.message.Op2009Handler;
-import it.interno.anpr.security.message.Op2011Handler;
-import it.interno.anpr.security.message.Op3001Handler;
-import it.interno.anpr.security.message.Op3002Handler;
-import it.interno.anpr.security.message.Op3003Handler;
-import it.interno.anpr.security.message.Op3005Handler;
-import it.interno.anpr.security.message.Op3007Handler;
-import it.interno.anpr.security.message.Op4001Handler;
-import it.interno.anpr.security.message.Op4002Handler;
-import it.interno.anpr.security.message.Op4003Handler;
-import it.interno.anpr.security.message.Op5001Handler;
-import it.interno.anpr.security.message.Op5005Handler;
-import it.interno.anpr.security.message.Op5008Handler;
-import it.interno.anpr.security.message.Op5012Handler;
-import it.interno.anpr.security.message.Op6001Handler;
-import it.interno.anpr.security.message.Op7001Handler;
-import it.interno.anpr.security.message.OpA001Handler;
-import it.interno.anpr.security.message.OpA002Handler;
-import it.interno.anpr.security.message.OpA006Handler;
-import it.interno.anpr.security.message.OpCIE2Handler;
-import it.interno.anpr.security.message.OpS001Handler;
-import it.interno.anpr.security.message.TestConnHandler;
+import it.interno.anpr.security.message.*;
 
 public class DispatchHandler {
 
@@ -129,6 +101,9 @@ public class DispatchHandler {
 			case WSTypeHandler.WSCIE2:
 				OpCIE2Handler servizioCIE2 = new OpCIE2Handler(param);
 				return servizioCIE2.isResponseValid(servizioCIE2.sendRequest());
+			case WSTypeHandler.WSP001:
+				OpP001Handler servizioP001 = new OpP001Handler(param);
+				return servizioP001.isResponseValid(servizioP001.sendRequest());
 			default:
 				System.out.println("Operation <"+param.getWsType().getWSFamily()+"> non gestita");
 				return false;

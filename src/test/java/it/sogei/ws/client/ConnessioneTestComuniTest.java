@@ -39,7 +39,7 @@ public class ConnessioneTestComuniTest {
 		ParamHandler param = new ParamHandler();
 		param.setEnvironment(EnvironmentHandler.TEST);
 		WSTypeHandler wsHandler = new WSTypeHandler();
-		wsHandler.setWSFamily(WSTypeHandler.WS3002);
+	  	wsHandler.setWSFamily(WSTypeHandler.WS3002);
 		param.setWsType(wsHandler);
 		param.setFileRequest("request/3002/3002_888002_TEST.req");
 		DispatchHandler dispatch = new DispatchHandler(param);
@@ -54,6 +54,18 @@ public class ConnessioneTestComuniTest {
 		wsHandler.setWSFamily(WSTypeHandler.WS6001);
 		param.setWsType(wsHandler);
 		param.setFileRequest("request/6001/6001_888013_TEST.req");
+		DispatchHandler dispatch = new DispatchHandler(param);
+		assert(dispatch.execute());
+	}
+
+	@Test
+	public void testP001OnTest() throws Exception {
+		ParamHandler param = new ParamHandler();
+		param.setEnvironment(EnvironmentHandler.TEST);
+		WSTypeHandler wsHandler = new WSTypeHandler();
+		wsHandler.setWSFamily(WSTypeHandler.WSP001);
+		param.setWsType(wsHandler);
+		param.setFileRequest("request/P001/P001_XXXXXX_TEST.req");
 		DispatchHandler dispatch = new DispatchHandler(param);
 		assert(dispatch.execute());
 	}
