@@ -22,16 +22,18 @@
 		</license>
 	</licenses>
 	<properties>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.1.7.RELEASE</spring.version>
+		<spring.version>5.3.39</spring.version>
 		<apache.cxf.version>3.1.8</apache.cxf.version>
 		<opensaml.version>3.1.1</opensaml.version>
-		<bouncycastle.version>1.56</bouncycastle.version>
+		<bouncycastle.version>1.70</bouncycastle.version>
 		<maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
 		<maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
 		<maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+		<junit.version>4.13.2</junit.version>
+		<fj-core.version>8.6.9</fj-core.version>
 	</properties>
 
 	<dependencies>
@@ -111,29 +113,29 @@
 			<version>${bouncycastle.version}</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>1.7.5</version>
+			<version>2.0.17</version>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.5</version>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j2-impl</artifactId>
+			<version>2.25.0</version>
 		</dependency>
+
 		<!-- Test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 		
 		<dependency>
 		  <groupId>org.fugerit.java</groupId>
 		  <artifactId>fj-core</artifactId>
-		  <version>0.1.4</version>
+		  <version>${fj-core.version}</version>
 		</dependency>					
 		
 	</dependencies>
