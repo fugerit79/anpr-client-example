@@ -41,7 +41,7 @@ public class ConnessioneTestComuniTest {
 		WSTypeHandler wsHandler = new WSTypeHandler();
 	  	wsHandler.setWSFamily(WSTypeHandler.WS3002);
 		param.setWsType(wsHandler);
-		param.setFileRequest("request/3002/3002_888002_TEST.req");
+		param.setFileRequest("request/3002/3002_A1_TEST.req");
 		DispatchHandler dispatch = new DispatchHandler(param);
 		assert(dispatch.execute());
 	}

@@ -16,3 +16,4 @@
 message_out.xml
 tags
 .*.sw[op]
+/message_in.xml
